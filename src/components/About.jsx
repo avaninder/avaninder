@@ -44,7 +44,7 @@ const About = () => {
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
+        className='mt-4 text-white text-[17px] max-w-3xl leading-[30px]'
       >
         I am a student at Phillips Exeter Academy, and I love working on projects related to deep learning and robotics!
         I have several years of experience in programming languages such as Python, Java, JavaScript, and C++ (for microcontrollers).
