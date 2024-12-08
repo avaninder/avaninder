@@ -14,7 +14,7 @@ export default function Home() {
           />
         </div>
         <Image
-          src="/srshub_img.jpg"
+          src="/srshub_img.png"
           alt="Render of PCB"
           fill
           style={{
