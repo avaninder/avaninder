@@ -31,8 +31,6 @@ export default function Home() {
             <div className="space-y-24">
               <Link
                 href="/projects"
-                target="_blank"
-                rel="noopener noreferrer"
                 className="block group"
               >
                 <div className={`flex flex-col lg:flex-row gap-8 items-center`}>
