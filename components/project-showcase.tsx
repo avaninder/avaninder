@@ -37,7 +37,21 @@ const projects: Project[] = [
     description: "A user interface to design and generate trajectories for the Vertices Path Follower, created by 15534 VERTEX.",
     imageUrl: "/vertices_path_gen.png",
     projectUrl: "https://vertices-path-gen.vercel.app"
-  }
+  },
+  {
+    id: 5,
+    title: "MacuScan",
+    description: "MacuScan is a mobile app which utilizes a Convolutional Neural Network for analyzing age-related macular degeneration (AMD) in the eye. This low-cost solution only requires a lens and 3d-printed adapter for a smartphone, and allows anyone to quickly diagnose AMD.",
+    imageUrl: "/macuscan.png",
+    projectUrl: "https://github.com/charizardavi/MacuScan"
+  },
+  {
+    id: 6,
+    title: "MyAIDermatologist",
+    description: "MyAIDermatologist is a mobile app that uses a convolutional neural network to detect various skin diseases, increasing accessibility for those without the ability to visit a dermatologist.",
+    imageUrl: "/myaidermatologist.png",
+    projectUrl: "https://github.com/charizardavi/myaidermatologist"
+  },
 ]
 
 export default function ProjectShowcase() {
