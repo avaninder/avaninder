@@ -27,34 +27,34 @@ export default function Home() {
           <Typewriter speed={50} text="Check out my projects" />
         </div>
         <main className="min-h-screen text-white py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">
-        <div className="space-y-24">
-          <Link
-            href="/projects"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="block group"
-          >
-            <div className={`flex flex-col lg:flex-row gap-8 items-center`}>
-              <div className="w-full lg:w-1/2">
-                <Image
-                  src="/srshub_img_2.png"
-                  alt="projects"
-                  width={600}
-                  height={400}
-                  className="rounded-3xl shadow-lg transition-transform duration-300 group-hover:scale-105"
-                />
-              </div>
-              <div className="w-full lg:w-1/2 space-y-4">
-                <p className="text-gray-300 text-lg group-hover:text-white transition-colors duration-300">
-                  Take a look at some of the projects I have worked on over the
-                  last few years, and my journey in engineering!
-                </p>
-              </div>
+          <div className="max-w-7xl mx-auto">
+            <div className="space-y-24">
+              <Link
+                href="/projects"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block group"
+              >
+                <div className={`flex flex-col lg:flex-row gap-8 items-center`}>
+                  <div className="w-full lg:w-1/2">
+                    <Image
+                      src="/srshub_img_2.png"
+                      alt="projects"
+                      width={600}
+                      height={400}
+                      className="rounded-3xl shadow-lg transition-transform duration-300 group-hover:scale-105"
+                    />
+                  </div>
+                  <div className="w-full lg:w-1/2 space-y-4">
+                    <p className="text-gray-300 text-lg group-hover:text-white transition-colors duration-300">
+                      Take a look at some of the projects I have worked on over
+                      the last few years, and my journey in engineering!
+                    </p>
+                  </div>
+                </div>
+              </Link>
             </div>
-          </Link>
-        </div>
-        </div>
+          </div>
         </main>
       </div>
     </div>
