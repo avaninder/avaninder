@@ -27,9 +27,6 @@ export default function Home() {
           <div className="max-w-7xl mx-auto">
             <div className="space-y-24">
               <Link href="/projects" className="block group">
-                <div className="z-10 p-8 text-white text-4xl font-bold">
-                  <Typewriter speed={50} text="Check out my projects" />
-                </div>
                 <div className={`flex flex-col lg:flex-row gap-8 items-center`}>
                   <div className="w-full lg:w-1/2">
                     <Image
@@ -41,9 +38,9 @@ export default function Home() {
                     />
                   </div>
                   <div className="w-full lg:w-1/2 space-y-4">
-                    <p className="font-mono text-white text-3xl group-hover:font-bold transition-colors duration-300">
-                      Click Here
-                    </p>
+                    <div className="z-10 p-8 text-white text-4xl font-bold">
+                      <Typewriter speed={50} text="Check out my projects" />
+                    </div>
                   </div>
                 </div>
               </Link>
