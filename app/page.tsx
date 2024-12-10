@@ -23,16 +23,13 @@ export default function Home() {
         ></Image>
       </div>
       <div className="h-[100vh]">
-        <div className="z-10 p-8 text-white text-4xl font-bold">
-          <Typewriter speed={50} text="Check out my projects" />
-        </div>
         <main className="min-h-screen text-white py-12 px-4 sm:px-6 lg:px-8">
           <div className="max-w-7xl mx-auto">
             <div className="space-y-24">
-              <Link
-                href="/projects"
-                className="block group"
-              >
+              <Link href="/projects" className="block group">
+                <div className="z-10 p-8 text-white text-4xl font-bold">
+                  <Typewriter speed={50} text="Check out my projects" />
+                </div>
                 <div className={`flex flex-col lg:flex-row gap-8 items-center`}>
                   <div className="w-full lg:w-1/2">
                     <Image
@@ -44,9 +41,8 @@ export default function Home() {
                     />
                   </div>
                   <div className="w-full lg:w-1/2 space-y-4">
-                    <p className="text-gray-300 text-lg group-hover:text-white transition-colors duration-300">
-                      Take a look at some of the projects I have worked on over
-                      the last few years, and my journey in engineering!
+                    <p className="font-mono text-white text-3xl group-hover:font-bold transition-colors duration-300">
+                      Click Here
                     </p>
                   </div>
                 </div>

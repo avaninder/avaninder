@@ -12,24 +12,24 @@ type Project = {
 const projects: Project[] = [
   {
     id: 1,
-    title: "SRS Hub & Tracker",
-    description: "The SRSHub is a fully-featured sensor integration board for FIRST Tech Challenge, featuring 12 analog/digital inputs, 6 dedicated-hardware quadrature/PWM encoder ports, and a 480 MHZ system clock for optimal performance. The SRSTracker is a dedicated odometry computer, which utilizes a 480 MHZ system clock to accurately compute the robots position. ",
-    imageUrl: "/srs_tracker_and_hub.png",
-    projectUrl: "https://srsrobotics.com"
-  },
-  {
-    id: 2,
     title: "Polaris Flight Computer",
     description: "Featuring an ultra-precise barometer and 6-DOF Inertial Measurement Unit, the Polaris FC is intended for rocketry and UAV applications. It's ultra-powerful STM32H7 MCU features an ARM Cortex®-M7 proccesing core, and the board supports up to 5 servos or ESCs for brushless motors. The reciever interface allows for communication with the standard SBUS and IBUS protocols.",
     imageUrl: "/polaris.png",
     projectUrl: "https://github.com/charizardavi/Polaris"
   },
   {
-    id: 3,
+    id: 2,
     title: "GimbalFOC",
     description: "A camera stabilization gimbal I made using a brushless DC motor field-oriented control algorithm for butter-smooth videography, even with severe shake.",
     imageUrl: "/gimbal.png",
     projectUrl: "https://github.com/charizardavi/GimbalFOC"
+  },
+  {
+    id: 3,
+    title: "SRS Hub & Tracker",
+    description: "The SRSHub is a fully-featured sensor integration board for FIRST Tech Challenge, featuring 12 analog/digital inputs, 6 dedicated-hardware quadrature/PWM encoder ports, and a 480 MHZ system clock for optimal performance. The SRSTracker is a dedicated odometry computer, which utilizes a 480 MHZ system clock to accurately compute the robots position. ",
+    imageUrl: "/srs_tracker_and_hub.png",
+    projectUrl: "/projects"
   },
   {
     id: 4,
