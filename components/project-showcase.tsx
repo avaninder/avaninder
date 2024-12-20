@@ -43,7 +43,7 @@ const projects: Project[] = [
     title: "Polaris Flight Computer",
     description:
       "Featuring an ultra-precise barometer and 6-DOF Inertial Measurement Unit, the Polaris FC is intended for rocketry and UAV applications. It's ultra-powerful STM32H7 MCU features an ARM Cortex®-M7 proccesing core, and the board supports up to 5 servos or ESCs for brushless motors. The reciever interface allows for communication with the standard SBUS and IBUS protocols.",
-    imageUrl: "/polaris.png",
+    imageUrl: "/polaris_top_down.png",
     projectUrl: "https://github.com/charizardavi/Polaris",
     hasLink: true,
   },

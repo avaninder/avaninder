@@ -1,15 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
-import logoImg from "../public/logo.png";
+import logoImg from "../public/avaninder_logo_white.png";
 
 const Navbar: React.FC = () => {
   return (
     <header className="flex h-20 w-full shrink-0 items-center px-4 md:px-6">
-      <Link href="/" className="mr-6 w-full h-9 lg:flex" prefetch={false}>
+      <Link href="/" className="mr-6 w-10 h-10 lg:flex" prefetch={false}>
       <Image
           src={logoImg}
           alt="logo"
-          width={30}
         />
       </Link>
       <nav className="ml-auto hidden lg:flex gap-6">

@@ -12,7 +12,7 @@ export default function Home() {
           <Typewriter speed={50} text="Hey there, I'm Avaninder" />
         </div>
         <Image
-          src="/polaris_img_home.png"
+          src="/polaris_img_home_new.png"
           alt="Render of PCB"
           fill
           style={{
