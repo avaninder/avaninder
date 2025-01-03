@@ -1,6 +1,5 @@
 'use client'
 
-import { useFormState } from 'react-dom'
 import { useFormStatus } from 'react-dom'
 import { sendEmail } from '@/app/actions/sendEmail'
 import { Button } from "@/components/ui/button"

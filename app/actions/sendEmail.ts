@@ -1,7 +1,6 @@
 'use server'
 
 import nodemailer from 'nodemailer'
-import { headers } from 'next/headers'
 
 type FormState = {
   success: boolean
