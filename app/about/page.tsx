@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Navbar from "@/components/navbar";
+import { ContactForm } from "@/components/ContactForm";
 
 export default function Home() {
   return (
@@ -21,8 +22,24 @@ export default function Home() {
             <div className="w-full md:w-1/3">
               <h1 className="text-3xl font-bold mb-4">About Me</h1>
               <p className="text-gray-300 text-lg leading-relaxed">
-                I&apos;m a high school student at Phillips Exeter Academy with a passion for engineering and tinkering. I&apos;ve done FIRST Robotics for 7 years, and have explored several fields in engineering from electrical engineering to programming! 
+                I&apos;m a high school student at Phillips Exeter Academy with a
+                passion for engineering and tinkering. I&apos;ve done FIRST
+                Robotics for 7 years, and have explored several fields in
+                engineering from electrical engineering to programming!
               </p>
+            </div>
+          </div>
+          <div className="w-full flex justify-center items-center gap-8 mt-[10vh]">
+            <div className="max-w-md w-full space-y-8">
+              <div>
+                <h2 className="mt-6 text-center text-3xl font-extrabold">
+                  Contact Me
+                </h2>
+                <p className="mt-2 text-center text-sm">
+                  Want to reach out? Send me a message!
+                </p>
+              </div>
+              <ContactForm />
             </div>
           </div>
         </div>

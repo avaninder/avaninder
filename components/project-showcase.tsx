@@ -51,7 +51,7 @@ const projects: Project[] = [
     id: 5,
     title: "GimbalFOC",
     description:
-      "A camera stabilization gimbal I made using a brushless DC motor field-oriented control algorithm for butter-smooth videography, even with severe shake.",
+      "A camera stabilization gimbal I made using a brushless DC motor field-oriented control algorithm for butter-smooth videography, even with severe shake. It uses custom PCBs that I built to integrate the encoder and MCU.",
     imageUrl: "/gimbal.png",
     projectUrl: "https://github.com/charizardavi/GimbalFOC",
     hasLink: true,
