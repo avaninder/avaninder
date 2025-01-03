@@ -9,12 +9,12 @@ import { ChevronsDown } from "lucide-react";
 
 export default function Home() {
   const [showArrow, setShowArrow] = useState(true);
-  const scrollContainerRef = useRef(null);
+  const scrollContainerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const handleScroll = () => {
       console.log("scrolled");
-      if (scrollContainerRef.current.scrollTop > 10) {
+      if (scrollContainerRef.current && scrollContainerRef.current.scrollTop > 10) {
         setShowArrow(false);
         console.log("false");
       } else {
