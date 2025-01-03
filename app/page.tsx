@@ -13,13 +13,10 @@ export default function Home() {
 
   useEffect(() => {
     const handleScroll = () => {
-      console.log("scrolled");
       if (scrollContainerRef.current && scrollContainerRef.current.scrollTop > 10) {
         setShowArrow(false);
-        console.log("false");
       } else {
         setShowArrow(true);
-        console.log("true");
       }
     };
 
