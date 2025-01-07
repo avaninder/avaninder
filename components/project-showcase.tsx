@@ -58,12 +58,12 @@ const projects: Project[] = [
   },
   {
     id: 6,
-    title: "SRS Hub & Tracker",
+    title: "SRS Robotics",
     description:
-      "The SRSHub is a fully-featured sensor integration board for FIRST Tech Challenge, featuring 12 analog/digital inputs, 6 dedicated-hardware quadrature/PWM encoder ports, and a 480 MHZ system clock for optimal performance. The SRSTracker is a dedicated odometry computer, which utilizes a 480 MHZ system clock to accurately compute the robots position. ",
+      "I cofounded SRS Robotics, a company that brings high-performance and intuitive components to educational robotics. We currently sell the SRS Hub, a fully-featured sensor integration board for FIRST Tech Challenge, featuring 12 analog/digital inputs, 6 dedicated-hardware quadrature/PWM encoder ports, and a 480 MHZ system clock for optimal performance. We also sell the SRS Tracker, a dedicated odometry computer, which utilizes a 480 MHZ system clock to accurately compute the robots position. ",
     imageUrl: "/srs_tracker_and_hub.png",
-    projectUrl: "#",
-    hasLink: false,
+    projectUrl: "https://srsrobotics.com",
+    hasLink: true,
   },
   {
     id: 7,
