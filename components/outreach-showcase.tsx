@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Image from "next/image";
 
 type Outreach = {
@@ -71,7 +70,7 @@ export default function OutreachShowcase() {
   return (
     <div className="space-y-24">
       {events.map((outreach, index) => (
-        <div className="block group">
+        <div className="block group" key={outreach.id}>
           <div
             className={`flex flex-col ${
               index % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"
