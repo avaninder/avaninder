@@ -8,7 +8,7 @@ export default function Home() {
       <Navbar />
       <div className="h-[55vh] w-screen relative">
         <Image
-          src="/all_pcb_render.png"
+          src="/pcb_scatter.jpg"
           alt="Render of PCB"
           fill
           style={{
