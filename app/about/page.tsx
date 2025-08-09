@@ -11,7 +11,7 @@ export default function Home() {
           <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
             <div className="w-full md:w-2/3 relative aspect-video">
               <Image
-                src="/esso_img.png"
+                src="/riken_pic.jpg"
                 alt="Profile picture"
                 fill
                 sizes="(max-width: 768px) 100vw, 66vw"
