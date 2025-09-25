@@ -1,2 +1,2 @@
-## My website
-visit at [avaninder.com](https://avaninder.com)
+## Hi there!
+visit at [avaninder.com](https://avaninder.com) to view my projects.
