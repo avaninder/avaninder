@@ -13,6 +13,15 @@ type Project = {
 const projects: Project[] = [
   {
     id: 1,
+    title: "Zephyrus Autonomous Solar VTOL",
+    description:
+      "My fall term Senior Project at Phillips Exeter Academy: a three-rotor Vertical Takeoff-Landing drone, with autonomous flight capability and solar panels for extended flight time.",
+    imageUrl: "/zephyrus_preview.png",
+    projectUrl: "/senior_project",
+    hasLink: true,
+  },
+  {
+    id: 2,
     title: "Autonomous Drone",
     description:
       "Originally built for image classifcation for the skies in middle school, I repurposed the drone for acrobatic FPV flight!",
@@ -21,7 +30,7 @@ const projects: Project[] = [
     hasLink: true,
   },
   {
-    id: 2,
+    id: 3,
     title: "Vertices Path Generator",
     description:
       "A user interface to design and generate trajectories for the Vertices Path Follower, created by 15534 VERTEX.",
@@ -30,7 +39,7 @@ const projects: Project[] = [
     hasLink: true,
   },
   {
-    id: 3,
+    id: 4,
     title: "MacuScan",
     description:
       "MacuScan is a mobile app which utilizes a Convolutional Neural Network for analyzing age-related macular degeneration (AMD) in the eye. This low-cost solution only requires a lens and 3d-printed adapter for a smartphone, and allows anyone to quickly diagnose AMD.",
@@ -39,7 +48,7 @@ const projects: Project[] = [
     hasLink: true,
   },
   {
-    id: 4,
+    id: 5,
     title: "Polaris Flight Computer",
     description:
       "Featuring an ultra-precise barometer and 6-DOF Inertial Measurement Unit, the Polaris FC is intended for rocketry and UAV applications. It's ultra-powerful STM32H7 MCU features an ARM Cortex®-M7 proccesing core, and the board supports up to 5 servos or ESCs for brushless motors. The reciever interface allows for communication with the standard SBUS and IBUS protocols.",
@@ -48,7 +57,7 @@ const projects: Project[] = [
     hasLink: true,
   },
   {
-    id: 5,
+    id: 6,
     title: "GimbalFOC",
     description:
       "A camera stabilization gimbal I made using a brushless DC motor field-oriented control algorithm for butter-smooth videography, even with severe shake. It uses custom PCBs that I built to integrate the encoder and MCU.",
@@ -57,7 +66,7 @@ const projects: Project[] = [
     hasLink: true,
   },
   {
-    id: 6,
+    id: 7,
     title: "SRS Robotics",
     description:
       "I cofounded SRS Robotics, a company that brings high-performance and intuitive components to educational robotics. We currently sell the SRS Hub, a fully-featured sensor integration board for FIRST Tech Challenge, featuring 12 analog/digital inputs, 6 dedicated-hardware quadrature/PWM encoder ports, and a 480 MHZ system clock for optimal performance. We also sell the SRS Tracker, a dedicated odometry computer, which utilizes a 480 MHZ system clock to accurately compute the robots position. ",
@@ -66,7 +75,7 @@ const projects: Project[] = [
     hasLink: true,
   },
   {
-    id: 7,
+    id: 8,
     title: "MyAIDermatologist",
     description:
       "MyAIDermatologist is a mobile app that uses a convolutional neural network to detect various skin diseases, increasing accessibility for those without the ability to visit a dermatologist.",
