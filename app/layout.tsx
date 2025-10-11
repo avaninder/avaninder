@@ -14,8 +14,21 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Avaninder's Portfolio",
-  description: "A collection of projects from a high school tinkerer",
+  title: {
+    default: "Avaninder Bhaghayath's Portfolio",
+    template: "%s | Avaninder Bhaghayath's Portfolio",
+  },
+  description: "A collection of my projects and other works.",
+  applicationName: "Avaninder Bhaghayath",
+  keywords: ["Avaninder", "Avaninder Bhaghayath", "Phillips Exeter"],
+  metadataBase: new URL("https://www.avaninder.com"),
+  openGraph: {
+    type: "website",
+    url: "https://www.avanider.com",
+    siteName: "Avaninder Bhaghayath's Portfolio",
+    title: "Avaninder Bhaghayath's Portfolio",
+    description: "A collection of my projects and other works."
+  },
 };
 
 export default function RootLayout({
