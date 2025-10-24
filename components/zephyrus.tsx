@@ -10,20 +10,34 @@ type post = {
 const events: post[] = [
   {
     id: 1,
+    title: "Frame Assembly",
+    description:
+      "With the tilt rotor pods and rear rotor put together, I'm gearing up for a first flight!",
+    imageUrl: "/drone-frame.jpg",
+  },
+  {
+    id: 2,
+    title: "Tilt Rotor Assembly",
+    description:
+      "Each pod comes out to ~450g, due to the high-power motors and aluminum joint construction.",
+    imageUrl: "/tilt_rotor_asm.jpg",
+  },
+  {
+    id: 3,
     title: "V2 Tilt Rotor Design",
     description:
       "After facing issues with the lack of support for the tilt rotor in the V1 servo mount design, I've designed and tested a much more robust and compact version, utilizing a spur gear for power transfer.",
     imageUrl: "/tilt_pod_v2.png",
   },
   {
-    id: 2,
+    id: 4,
     title: "Spar Assembly",
     description:
       "With a 2-meter wingspan, the spar and tail boom combined will be lightweight thanks to the carbon fiber construction, enabling longer flight times with high structural integrity.",
     imageUrl: "/spar_weighed.jpg",
   },
   {
-    id: 3,
+    id: 5,
     title: "Motors and Propellers",
     description:
       "With the three-rotor configuration, each featuring a 12x6 propeller and 790kv motor, the total weight is ~0.6 kg.",
