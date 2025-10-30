@@ -15,9 +15,6 @@ export default function Home() {
           <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold text-white mb-4">
             Hey there, I&apos;m Avaninder
           </h1>
-          <p className="text-lg sm:text-xl md:text-2xl text-gray-400">
-            Engineer • Designer • Photographer
-          </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
