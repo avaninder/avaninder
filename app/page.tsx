@@ -12,7 +12,7 @@ export default function Home() {
       
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="mb-8">
-          <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold text-white mb-4">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4">
             Hey there, I&apos;m Avaninder
           </h1>
         </div>
@@ -95,22 +95,6 @@ export default function Home() {
           </Link>
 
           <Link
-            href="/about"
-            className="relative overflow-hidden rounded-3xl md:col-span-2 bg-gradient-to-br from-blue-600 to-purple-600 p-6 sm:p-8 group hover:from-blue-700 hover:to-purple-700 transition-all h-auto min-h-[200px] sm:h-[250px]"
-          >
-            <div className="relative z-10">
-              <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-3 sm:mb-4">About Me</h3>
-              <p className="text-white/90 text-sm sm:text-base mb-3 sm:mb-4">
-                High school student at Phillips Exeter Academy with a passion for engineering, robotics, and photography.
-              </p>
-              <p className="text-white flex items-center gap-2 text-sm sm:text-base">
-                Learn more <ArrowUpRight className="w-4 h-4 sm:w-5 sm:h-5" />
-              </p>
-            </div>
-            <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl" />
-          </Link>
-
-          <Link
             href="https://srsrobotics.com"
             target="_blank"
             rel="noopener noreferrer"
@@ -154,16 +138,6 @@ export default function Home() {
                 Watch on YouTube <ArrowUpRight className="w-4 h-4 sm:w-5 sm:h-5" />
               </p>
             </div>
-          </Link>
-
-          <Link
-            href="/contact"
-            className="relative group overflow-hidden rounded-3xl md:col-span-2 bg-white text-black p-6 sm:p-8 hover:bg-gray-100 transition-colors h-auto min-h-[150px] sm:h-[200px]"
-          >
-            <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-2">Get in touch</h3>
-            <p className="text-gray-600 text-base sm:text-lg flex items-center gap-2">
-              Send me a message! <ArrowUpRight className="w-5 h-5 sm:w-6 sm:h-6" />
-            </p>
           </Link>
 
         </div>
