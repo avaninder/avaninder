@@ -6,10 +6,10 @@ import Link from "next/link";
 
 export default function Photography() {
   return (
-    <div className="w-screen h-screen overflow-x-hidden overflow-y-auto">
+    <div className="h-screen flex flex-col overflow-hidden">
       <Navbar />
-      <div className="min-h-screen text-gray-100">
-        <div className="grid grid-cols-1 lg:grid-cols-3 h-[calc(100vh-5rem)]">
+      <div className="flex-1 text-gray-100">
+        <div className="grid grid-cols-1 lg:grid-cols-3 h-full">
           
           <Link href="/photography/cityscapes" className="relative group overflow-hidden">
             <div className="absolute inset-0 z-10 flex items-center justify-center">

@@ -16,7 +16,7 @@ export default function PCBs() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   return (
-    <div className="w-screen h-screen overflow-x-hidden overflow-y-auto">
+    <div className="min-h-screen">
       <Navbar />
       <div className="min-h-screen text-gray-100 py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">

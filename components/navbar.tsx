@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import logoImg from "../public/avaninder_logo_white.png";
 import { useState } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Github, Linkedin } from "lucide-react";
 
 const Navbar: React.FC = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -14,6 +14,7 @@ const Navbar: React.FC = () => {
     { href: "/projects", label: "PROJECTS" },
     { href: "/photography", label: "PHOTOGRAPHY" },
     { href: "/about", label: "ABOUT ME" },
+    { href: "/contact", label: "CONTACT" },
   ];
 
   return (
@@ -22,7 +23,7 @@ const Navbar: React.FC = () => {
         <Image src={logoImg} alt="logo" />
       </Link>
 
-      <nav className="ml-auto hidden lg:flex gap-6">
+      <nav className="ml-auto hidden lg:flex gap-6 items-center">
         {navLinks.map((link) => (
           <Link
             key={link.href}
@@ -33,6 +34,27 @@ const Navbar: React.FC = () => {
             {link.label}
           </Link>
         ))}
+        
+        <div className="flex items-center gap-3 ml-2">
+          <Link
+            href="https://github.com/avaninder"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white hover:text-gray-300 transition-colors"
+            aria-label="GitHub"
+          >
+            <Github size={24} />
+          </Link>
+          <Link
+            href="https://www.linkedin.com/in/avaninder-bhaghayath-04936a251/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white hover:text-gray-300 transition-colors"
+            aria-label="LinkedIn"
+          >
+            <Linkedin size={24} />
+          </Link>
+        </div>
       </nav>
 
       <button
@@ -57,6 +79,29 @@ const Navbar: React.FC = () => {
                 {link.label}
               </Link>
             ))}
+            
+            <div className="flex items-center gap-6 mt-4">
+              <Link
+                href="https://github.com/avaninder"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white hover:text-gray-300 transition-colors"
+                aria-label="GitHub"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                <Github size={32} />
+              </Link>
+              <Link
+                href="https://www.linkedin.com/in/avaninder-bhaghayath-04936a251/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white hover:text-gray-300 transition-colors"
+                aria-label="LinkedIn"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                <Linkedin size={32} />
+              </Link>
+            </div>
           </nav>
         </div>
       )}
