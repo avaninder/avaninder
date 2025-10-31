@@ -37,9 +37,8 @@ export default function About() {
                 </h2>
                 <p className="text-gray-300 text-lg leading-relaxed">
                   I&apos;m a high school student at Phillips Exeter Academy with a
-                  passion for engineering and tinkering. I&apos;ve done FIRST
-                  Robotics for 7 years, and have explored several fields in
-                  engineering from electrical engineering to programming!
+                  passion for engineering and tinkering. I&apos;ve explored several fields in
+                  engineering from PCB design to programming! In my free time, I enjoy photography and traveling. 
                 </p>
               </div>
 
