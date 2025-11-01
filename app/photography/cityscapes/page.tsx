@@ -1,7 +1,7 @@
 "use client";
 
 import Navbar from "@/components/navbar";
-import { X } from "lucide-react";
+import { X, ChevronLeft, ChevronRight } from "lucide-react";
 import Image from "next/image";
 import { useState } from "react";
 
@@ -25,7 +25,21 @@ const images = [
 ];
 
 export default function Cityscapes() {
-  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+  const [selectedImageIndex, setSelectedImageIndex] = useState<number | null>(null);
+
+  const handlePrevious = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    if (selectedImageIndex !== null && selectedImageIndex > 0) {
+      setSelectedImageIndex(selectedImageIndex - 1);
+    }
+  };
+
+  const handleNext = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    if (selectedImageIndex !== null && selectedImageIndex < images.length - 1) {
+      setSelectedImageIndex(selectedImageIndex + 1);
+    }
+  };
 
   return (
     <div className="min-h-screen">
@@ -39,7 +53,7 @@ export default function Cityscapes() {
               <div
                 key={index}
                 className="break-inside-avoid cursor-pointer group relative overflow-hidden rounded-lg"
-                onClick={() => setSelectedImage(`/photography/cities/${image}`)}
+                onClick={() => setSelectedImageIndex(index)}
               >
                 <Image
                   src={`/photography/cities/${image}`}
@@ -58,14 +72,14 @@ export default function Cityscapes() {
         </div>
       </div>
 
-      {selectedImage && (
+      {selectedImageIndex !== null && (
         <div
           className="fixed inset-0 bg-black/95 z-50 flex items-center justify-center p-4"
-          onClick={() => setSelectedImage(null)}
+          onClick={() => setSelectedImageIndex(null)}
         >
           <div className="relative max-w-7xl max-h-[90vh] w-full h-full flex items-center justify-center">
             <Image
-              src={selectedImage}
+              src={`/photography/cities/${images[selectedImageIndex]}`}
               alt="Selected cityscape"
               width={1920}
               height={1080}
@@ -73,12 +87,52 @@ export default function Cityscapes() {
               quality={85}
               priority
             />
+            {selectedImageIndex > 0 && (
+              <div className="hidden">
+                <Image
+                  src={`/photography/cities/${images[selectedImageIndex - 1]}`}
+                  alt="Preload previous"
+                  width={1920}
+                  height={1080}
+                  quality={85}
+                  priority
+                />
+              </div>
+            )}
+            {selectedImageIndex < images.length - 1 && (
+              <div className="hidden">
+                <Image
+                  src={`/photography/cities/${images[selectedImageIndex + 1]}`}
+                  alt="Preload next"
+                  width={1920}
+                  height={1080}
+                  quality={85}
+                  priority
+                />
+              </div>
+            )}
             <button
-              className="absolute top-4 right-4 text-white text-4xl font-bold hover:text-gray-300"
-              onClick={() => setSelectedImage(null)}
+              className="absolute top-4 right-4 text-white hover:text-gray-300 transition-colors"
+              onClick={() => setSelectedImageIndex(null)}
             >
               <X size={32} />
             </button>
+            {selectedImageIndex > 0 && (
+              <button
+                className="absolute left-4 top-1/2 -translate-y-1/2 text-white hover:text-gray-300 transition-colors bg-black/50 hover:bg-black/70 rounded-full p-2 sm:p-3"
+                onClick={handlePrevious}
+              >
+                <ChevronLeft size={32} className="sm:w-12 sm:h-12" />
+              </button>
+            )}
+            {selectedImageIndex < images.length - 1 && (
+              <button
+                className="absolute right-4 top-1/2 -translate-y-1/2 text-white hover:text-gray-300 transition-colors bg-black/50 hover:bg-black/70 rounded-full p-2 sm:p-3"
+                onClick={handleNext}
+              >
+                <ChevronRight size={32} className="sm:w-12 sm:h-12" />
+              </button>
+            )}
           </div>
         </div>
       )}
