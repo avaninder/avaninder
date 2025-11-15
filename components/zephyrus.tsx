@@ -11,6 +11,21 @@ type post = {
 
 const events: post[] = [
   {
+    title: "Second Test Flight",
+    description:
+      "The added weight of the ribs and tail did not affect flight performance, which is promising! The airspeed was lower than expected, and total acceleration needs optimization before transitioning, either by shaving weight or changing motor+prop configuration.",
+    imageUrl: "/zephyrus_test_2.mp4",
+    phase: "Phase 9",
+    isVideo: true,
+  },
+  {
+    title: "Finished Assembly",
+    description:
+      "Using a thermal-sealing wrap, the wings are done, and the drone is ready for another flight!",
+    imageUrl: "/finished_assembly.jpg",
+    phase: "Phase 8",
+  },
+  {
     title: "Wing Rib Assembly",
     description:
       "Using ultra-light servos with laser-cut plywood ribs, the ailerons are assembled and ready for tuning!",
@@ -86,7 +101,7 @@ export default function ZephyrusShowcase() {
                       <video
                         src={post.imageUrl}
                         controls
-                        className="w-full h-full object-cover"
+                        className="w-full h-full object-contain bg-black"
                         preload="metadata"
                       >
                         Your browser does not support the video tag.

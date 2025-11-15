@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Navbar from "@/components/navbar";
 import Link from "next/link";
-import { ArrowUpRight, Camera } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 
 export default function Home() {
   return (
@@ -51,7 +51,7 @@ export default function Home() {
                   src="/photography/cities/IMG_0216.jpg"
                   alt="Photography"
                   fill
-                  className="object-cover"
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
                   sizes="(max-width: 768px) 50vw, 33vw"
                   quality={70}
                 />
@@ -61,7 +61,7 @@ export default function Home() {
                   src="/photography/pcbs/IMG_0378.jpg"
                   alt="Photography"
                   fill
-                  className="object-cover"
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
                   sizes="(max-width: 768px) 50vw, 33vw"
                   quality={70}
                 />
@@ -71,7 +71,7 @@ export default function Home() {
                   src="/photography/other/IMG_0238.jpg"
                   alt="Photography"
                   fill
-                  className="object-cover"
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
                   sizes="(max-width: 768px) 50vw, 33vw"
                   quality={70}
                 />
@@ -81,16 +81,18 @@ export default function Home() {
                   src="/photography/cities/IMG_1987.jpg"
                   alt="Photography"
                   fill
-                  className="object-cover"
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
                   sizes="(max-width: 768px) 50vw, 33vw"
                   quality={70}
                 />
               </div>
             </div>
-            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/60 transition-colors duration-300" />
-            <div className="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              <Camera className="w-12 h-12 text-white mb-2" />
-              <p className="text-white text-xl font-bold">Photography</p>
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+            <div className="absolute bottom-0 left-0 p-4 sm:p-6 md:p-8">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-2">Photography</h2>
+              <p className="text-sm sm:text-base text-gray-300 flex items-center gap-2">
+                View gallery <ArrowUpRight className="w-4 h-4 sm:w-5 sm:h-5" />
+              </p>
             </div>
           </Link>
 
@@ -108,11 +110,11 @@ export default function Home() {
               sizes="(max-width: 768px) 100vw, 50vw"
               quality={75}
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent" />
-            <div className="absolute bottom-0 left-0 p-4 sm:p-6">
-              <h3 className="text-lg sm:text-xl font-bold text-white mb-1">SRS Robotics</h3>
-              <p className="text-gray-300 text-xs sm:text-sm flex items-center gap-1">
-                Visit website <ArrowUpRight className="w-3 h-3 sm:w-4 sm:h-4" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+            <div className="absolute bottom-0 left-0 p-4 sm:p-6 md:p-8">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-2">SRS Robotics</h2>
+              <p className="text-sm sm:text-base text-gray-300 flex items-center gap-2">
+                Visit website <ArrowUpRight className="w-4 h-4 sm:w-5 sm:h-5" />
               </p>
             </div>
           </Link>
@@ -131,9 +133,9 @@ export default function Home() {
               sizes="(max-width: 768px) 100vw, 50vw"
               quality={75}
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
             <div className="absolute bottom-0 left-0 p-4 sm:p-6 md:p-8">
-              <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-2">VERTEX Robotics</h3>
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-2">VERTEX Robotics</h2>
               <p className="text-sm sm:text-base text-gray-300 flex items-center gap-2">
                 Watch on YouTube <ArrowUpRight className="w-4 h-4 sm:w-5 sm:h-5" />
               </p>
