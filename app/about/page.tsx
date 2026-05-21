@@ -1,7 +1,5 @@
 import Image from "next/image";
 import Navbar from "@/components/navbar";
-import Link from "next/link";
-import { ArrowRight } from "lucide-react";
 
 export default function About() {
   return (
