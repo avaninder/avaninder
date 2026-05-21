@@ -41,14 +41,6 @@ export default function About() {
                   engineering from PCB design to programming! In my free time, I enjoy photography and traveling. 
                 </p>
               </div>
-
-              <Link
-                href="/contact"
-                className="inline-flex items-center gap-2 bg-white text-black font-bold px-8 py-4 rounded-full hover:bg-gray-200 transition-all mt-6 group"
-              >
-                Get In Touch
-                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </Link>
             </div>
 
             <div className="grid grid-cols-2 gap-4">

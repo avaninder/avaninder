@@ -14,7 +14,6 @@ const Navbar: React.FC = () => {
     { href: "/projects", label: "PROJECTS" },
     { href: "/photography", label: "PHOTOGRAPHY" },
     { href: "/about", label: "ABOUT ME" },
-    { href: "/contact", label: "CONTACT" },
   ];
 
   return (
@@ -46,7 +45,7 @@ const Navbar: React.FC = () => {
             <Github size={24} />
           </Link>
           <Link
-            href="https://www.linkedin.com/in/avaninder-bhaghayath-04936a251/"
+            href="https://www.linkedin.com/in/avaninder/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-white hover:text-gray-300 transition-colors"
