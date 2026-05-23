@@ -20,16 +20,16 @@ export default function SeniorProject() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/60 to-black" />
         <div className="absolute inset-0 flex flex-col items-center justify-center px-4">
           <div className="inline-block px-4 py-2 bg-blue-600/80 backdrop-blur-sm text-white text-sm font-semibold rounded-full mb-6">
-            Fall 2025 Senior Project
+            Senior Project
           </div>
           <h1 className="text-6xl md:text-8xl lg:text-9xl font-bold text-white mb-6 text-center">
             Zephyrus
           </h1>
           <p className="text-xl md:text-3xl text-gray-200 text-center max-w-4xl mb-8">
-            Autonomous Solar-Powered VTOL Drone
+            Autonomous VTOL Drone
           </p>
           <p className="text-lg md:text-xl text-gray-300 text-center max-w-3xl">
-            A three-rotor Vertical Takeoff and Landing drone with autonomous flight capability and solar panels for extended flight time
+            A three-rotor Vertical Takeoff and Landing drone with autonomous flight capability.
           </p>
         </div>
       </div>
