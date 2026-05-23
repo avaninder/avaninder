@@ -16,9 +16,9 @@ type Project = {
 const projects: Project[] = [
   {
     id: 1,
-    title: "Zephyrus Autonomous Solar VTOL",
+    title: "Zephyrus VTOL",
     description:
-      "My fall term Senior Project at Phillips Exeter Academy: a three-rotor Vertical Takeoff-Landing drone, with autonomous flight capability and solar panels for extended flight time.",
+      "My Senior Project at Phillips Exeter Academy: a three-rotor Vertical Takeoff-Landing drone, with autonomous flight capability.",
     imageUrl: "/zephyrus_preview.png",
     projectUrl: "/senior_project",
     hasLink: true,
