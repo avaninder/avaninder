@@ -86,16 +86,16 @@ const projects: Project[] = [
     hasLink: true,
     category: "AI/ML",
   },
-  {
-    id: 8,
-    title: "MyAIDermatologist",
-    description:
-      "A mobile app that uses a convolutional neural network to detect various skin diseases, increasing accessibility for those without the ability to visit a dermatologist.",
-    imageUrl: "/myaidermatologist.png",
-    projectUrl: "https://github.com/charizardavi/myaidermatologist",
-    hasLink: true,
-    category: "AI/ML",
-  },
+  // {
+  //   id: 8,
+  //   title: "MyAIDermatologist",
+  //   description:
+  //     "A mobile app that uses a convolutional neural network to detect various skin diseases, increasing accessibility for those without the ability to visit a dermatologist.",
+  //   imageUrl: "/myaidermatologist.png",
+  //   projectUrl: "https://github.com/charizardavi/myaidermatologist",
+  //   hasLink: true,
+  //   category: "AI/ML",
+  // },
 ];
 
 export default function ProjectShowcase() {
