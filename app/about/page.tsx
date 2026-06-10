@@ -10,7 +10,7 @@ export default function About() {
           
           <div className="relative h-[60vh] md:h-[70vh] rounded-3xl overflow-hidden mb-12">
             <Image
-              src="/riken_pic.jpg"
+              src="/worlds_2026.jpg"
               alt="Profile picture"
               fill
               sizes="100vw"
