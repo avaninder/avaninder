@@ -1,17 +1,19 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
+import { IBM_Plex_Mono, IBM_Plex_Sans } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
+const plexSans = IBM_Plex_Sans({
+  subsets: ["latin"],
+  weight: ["400", "500", "600"],
+  variable: "--font-sans",
+  display: "swap",
 });
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
+const plexMono = IBM_Plex_Mono({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-mono",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -19,16 +21,16 @@ export const metadata: Metadata = {
     default: "Avaninder Bhaghayath's Portfolio",
     template: "%s | Avaninder Bhaghayath's Portfolio",
   },
-  description: "A collection of my projects and other works.",
+  description: "EE & CS student at Yale.",
   applicationName: "Avaninder Bhaghayath",
-  keywords: ["Avaninder", "Avaninder Bhaghayath", "Phillips Exeter"],
+  keywords: ["Avaninder", "Avaninder Bhaghayath", "Yale", "Phillips Exeter"],
   metadataBase: new URL("https://www.avaninder.com"),
   openGraph: {
     type: "website",
-    url: "https://www.avanider.com",
+    url: "https://www.avaninder.com",
     siteName: "Avaninder Bhaghayath's Portfolio",
     title: "Avaninder Bhaghayath's Portfolio",
-    description: "A collection of my projects and other works."
+    description: "EE & CS student at Yale."
   },
 };
 
@@ -40,7 +42,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen bg-black overflow-x-hidden`}
+        className={`${plexSans.variable} ${plexMono.variable} antialiased min-h-screen overflow-x-hidden`}
         suppressHydrationWarning
       >
         {children}

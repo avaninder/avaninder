@@ -1,7 +1,6 @@
 import Image from "next/image";
-import { CheckCircle2 } from "lucide-react";
 
-type post = {
+type Post = {
   title: string;
   description: string;
   imageUrl: string;
@@ -9,7 +8,7 @@ type post = {
   isVideo?: boolean;
 };
 
-const events: post[] = [
+const events: Post[] = [
   {
     title: "Second Test Flight",
     description:
@@ -79,64 +78,32 @@ const events: post[] = [
 
 export default function ZephyrusShowcase() {
   return (
-    <div className="relative">
-      <div className="hidden lg:block absolute left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-blue-600 via-purple-600 to-transparent" />
-
-      <div className="space-y-16">
-        {events.map((post, index) => (
-          <div className="relative" key={index}>
-            <div className="hidden lg:flex absolute left-1/2 -translate-x-1/2 w-12 h-12 bg-blue-600 rounded-full items-center justify-center border-4 border-black z-10">
-              <CheckCircle2 className="w-6 h-6 text-white" />
-            </div>
-
-            <div
-              className={`flex flex-col lg:flex-row gap-8 items-center ${
-                index % 2 === 0 ? "" : "lg:flex-row-reverse"
-              }`}
-            >
-              <div className={`w-full lg:w-1/2 ${index % 2 === 0 ? "lg:pr-16" : "lg:pl-16"}`}>
-                <div className="relative group overflow-hidden rounded-3xl bg-gray-900 border border-gray-800 hover:border-blue-500 transition-all duration-300">
-                  <div className="relative h-64 md:h-80">
-                    {post.isVideo ? (
-                      <video
-                        src={post.imageUrl}
-                        controls
-                        className="w-full h-full object-contain bg-black"
-                        preload="metadata"
-                      >
-                        Your browser does not support the video tag.
-                      </video>
-                    ) : (
-                      <Image
-                        src={post.imageUrl}
-                        alt={post.title}
-                        fill
-                        className="object-cover transition-transform duration-500 group-hover:scale-105"
-                        sizes="(max-width: 768px) 100vw, 50vw"
-                        quality={85}
-                      />
-                    )}
-                  </div>
-                </div>
-              </div>
-
-              <div className={`w-full lg:w-1/2 ${index % 2 === 0 ? "lg:pl-16" : "lg:pr-16"}`}>
-                <div className="bg-gray-900 rounded-3xl p-8 border border-gray-800 hover:border-blue-500 transition-all duration-300">
-                  <div className="inline-block px-3 py-1 bg-blue-600 text-white text-xs font-semibold rounded-full mb-4">
-                    {post.phase}
-                  </div>
-                  <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                    {post.title}
-                  </h2>
-                  <p className="text-gray-300 text-lg leading-relaxed">
-                    {post.description}
-                  </p>
-                </div>
-              </div>
-            </div>
+    <div>
+      {events.map((post) => (
+        <div className="bn-phase" key={post.phase}>
+          <div className="bn-phase-media">
+            {post.isVideo ? (
+              <video src={post.imageUrl} controls preload="metadata">
+                Your browser does not support the video tag.
+              </video>
+            ) : (
+              <Image
+                src={post.imageUrl}
+                alt={post.title}
+                fill
+                sizes="(max-width: 640px) 100vw, 176px"
+              />
+            )}
           </div>
-        ))}
-      </div>
+          <div className="bn-phase-body">
+            <div className="bn-phase-row">
+              <h3>{post.title}</h3>
+              <span className="bn-phase-tag">{post.phase}</span>
+            </div>
+            <p>{post.description}</p>
+          </div>
+        </div>
+      ))}
     </div>
   );
 }
