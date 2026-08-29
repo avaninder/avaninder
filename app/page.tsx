@@ -235,7 +235,7 @@ export default function Home() {
             height={384}
           />
           <p>
-            Hey! I'm Avaninder, and I'm currently studying EE & CS at Yale. My background is in competitive robotics, and I'm continuing to put those skills to use across industries. If you want to reach out, my contact info is on LinkedIn (below).
+            Hey! I&apos;m Avaninder, and I&apos;m currently studying EE & CS at Yale. My background is in competitive robotics, and I&apos;m continuing to put those skills to use across industries. If you want to reach out, my contact info is on LinkedIn (below).
           </p>
         </section>
 
