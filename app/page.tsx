@@ -21,37 +21,37 @@ const experiences: Experience[] = [
     end: "August 2026",
     logo: "/machindustries_logo.jpg",
     description:
-      "Improved GNSS-denied, vision-based localization and built low-level camera drivers for a zero-copy, hardware-accelerated vision pipeline on an SoC platform.",
+      "Improved GNSS-denied, vision-based localization with GMSL Cameras.",
   },
   {
-    company: "Dartmouth College — LISP Lab",
+    company: "Dartmouth College, LISP Lab",
     role: "Research Intern",
     location: "Hanover, NH",
     start: "June 2025",
     end: "December 2025",
     logo: "/dartmouth_logo.jpg",
     description:
-      "Developed per-path importance and graph-trimming methods for Path Complex Networks; first-author paper submitted for conference publication.",
+      "Developed per-path importance and graph-trimming methods for Path Complex Networks.",
   },
   {
-    company: "RIKEN — Nishina Center",
+    company: "RIKEN, Nishina Center",
     role: "Visiting Researcher",
     location: "Tokyo, Japan",
     start: "July 2025",
     end: "August 2025",
     logo: "/riken_logo.jpg",
     description:
-      "Ran a 9Be(p,γ)10B beamline experiment and used Bayesian estimation over nuclear cross-section models to produce reaction rates.",
+      "Ran a 9Be(p,γ)10B beamline experiment and used data analysis to determine reaction rates.",
   },
   {
-    company: "VERTEX Robotics (FTC)",
+    company: "VERTEX Robotics (FTC 15534)",
     role: "Team Captain",
     location: "Exeter, NH",
     start: "2022",
     end: "2026",
     logo: "/ftcvertex_logo.jpg",
     description:
-      "Designed and programmed 4 World Championship-qualifying robots (2023 Worlds finalist), including a vision-based localization system and a Bézier-curve pathing algorithm for a holonomic drivetrain.",
+      "Led a 4-time World Championship-qualifying team (2023 Worlds finalist).",
   },
 ];
 
@@ -77,7 +77,7 @@ const projects: Project[] = [
   {
     title: "SRS Robotics",
     description:
-      "I cofounded SRS Robotics, a company that brings high-performance and intuitive components to educational robotics. We currently sell the SRS Hub and SRS Tracker, featuring advanced sensor integration and odometry capabilities.",
+      "I cofounded SRS Robotics, and developed the SRSHub, a high-performance sensor-reading board.",
     projectUrl: "https://srsrobotics.com",
     icon: "/srs_outline.png",
     iconWidth: 2493,
@@ -95,7 +95,7 @@ const projects: Project[] = [
   {
     title: "GimbalFOC",
     description:
-      "A camera stabilization gimbal using a brushless DC motor field-oriented control algorithm for butter-smooth videography, with custom PCBs integrating the encoder and MCU.",
+      "A camera stabilization gimbal using a BLDC motor field-oriented control algorithm for butter-smooth videography, with custom PCBs integrating the encoder and MCU.",
     projectUrl: "https://github.com/charizardavi/GimbalFOC",
     icon: "/gimbal_outline.png",
     iconWidth: 2001,
