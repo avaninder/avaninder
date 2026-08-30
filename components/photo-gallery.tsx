@@ -113,8 +113,8 @@ export default function PhotoGallery({ photos }: { photos: Photo[] }) {
             alt={selected.alt}
             width={selected.width}
             height={selected.height}
-            sizes="90vw"
-            quality={90}
+            sizes="(max-width: 1600px) 90vw, 1600px"
+            quality={65}
             priority
             className="bn-lightbox-image"
             onClick={(e) => e.stopPropagation()}
