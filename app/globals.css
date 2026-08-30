@@ -287,6 +287,15 @@ body {
   line-height: 1.6;
   max-width: 46em;
 }
+.bn-inline-link {
+  color: var(--blue);
+  text-decoration: underline;
+  text-decoration-color: var(--hairline);
+  text-underline-offset: 2px;
+}
+.bn-inline-link:hover {
+  text-decoration-color: currentColor;
+}
 
 /* Photography teaser */
 .bn-photo-grid {

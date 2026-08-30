@@ -1,3 +1,4 @@
+import type { ReactNode } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowUpRight, Github, Linkedin } from "lucide-react";
@@ -57,7 +58,7 @@ const experiences: Experience[] = [
 
 type Project = {
   title: string;
-  description: string;
+  description: ReactNode;
   projectUrl: string;
   icon?: string;
   iconWidth?: number;
@@ -68,7 +69,7 @@ const projects: Project[] = [
   {
     title: "Zephyrus VTOL",
     description:
-      "My Senior Project at Phillips Exeter Academy: a three-rotor Vertical Takeoff-Landing drone, with autonomous flight capability.",
+      "A three-rotor Vertical Takeoff-Landing drone, with autonomous flight capability. Supported by Phillips Exeter Academy.",
     projectUrl: "/senior_project",
     icon: "/zephyrus_outline.png",
     iconWidth: 3296,
@@ -94,8 +95,20 @@ const projects: Project[] = [
   },
   {
     title: "GimbalFOC",
-    description:
-      "A camera stabilization gimbal using a BLDC motor field-oriented control algorithm for butter-smooth videography, with custom PCBs integrating the encoder and MCU.",
+    description: (
+      <>
+        A camera stabilization gimbal using a BLDC motor and custom PCBs, sponsored by{" "}
+        <a
+          href="https://www.pcbway.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bn-inline-link"
+        >
+          PCBWay
+        </a>
+        .
+      </>
+    ),
     projectUrl: "https://github.com/charizardavi/GimbalFOC",
     icon: "/gimbal_outline.png",
     iconWidth: 2001,
