@@ -48,8 +48,8 @@ const experiences: Experience[] = [
     company: "VERTEX Robotics (FTC 15534)",
     role: "Team Captain",
     location: "Exeter, NH",
-    start: "2022",
-    end: "2026",
+    start: "September 2022",
+    end: "May 2026",
     logo: "/ftcvertex_logo.jpg",
     description:
       "Led a 4-time World Championship-qualifying team (2023 Worlds finalist).",
