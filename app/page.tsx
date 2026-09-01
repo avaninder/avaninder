@@ -10,6 +10,8 @@ type Experience = {
   start: string;
   end: string;
   logo: string;
+  logoWidth: number;
+  logoHeight: number;
   description: string;
 };
 
@@ -20,7 +22,9 @@ const experiences: Experience[] = [
     location: "Huntington Beach, CA",
     start: "June 2026",
     end: "August 2026",
-    logo: "/machindustries_logo.jpg",
+    logo: "/machindustries_logo.png",
+    logoWidth: 258,
+    logoHeight: 259,
     description:
       "Improved GNSS-denied, vision-based localization with GMSL Cameras.",
   },
@@ -30,7 +34,9 @@ const experiences: Experience[] = [
     location: "Hanover, NH",
     start: "June 2025",
     end: "December 2025",
-    logo: "/dartmouth_logo.jpg",
+    logo: "/dartmouth_logo.png",
+    logoWidth: 280,
+    logoHeight: 286,
     description:
       "Developed per-path importance and graph-trimming methods for Path Complex Networks.",
   },
@@ -40,7 +46,9 @@ const experiences: Experience[] = [
     location: "Tokyo, Japan",
     start: "July 2025",
     end: "August 2025",
-    logo: "/riken_logo.jpg",
+    logo: "/riken_logo.png",
+    logoWidth: 1513,
+    logoHeight: 2421,
     description:
       "Ran a 9Be(p,γ)10B beamline experiment and used data analysis to determine reaction rates.",
   },
@@ -50,7 +58,9 @@ const experiences: Experience[] = [
     location: "Exeter, NH",
     start: "September 2022",
     end: "May 2026",
-    logo: "/ftcvertex_logo.jpg",
+    logo: "/ftcvertex_logo.png",
+    logoWidth: 525,
+    logoHeight: 502,
     description:
       "Led a 4-time World Championship-qualifying team (2023 Worlds finalist).",
   },
@@ -195,9 +205,10 @@ export default function Home() {
               <div className="bn-exp-logo">
                 <Image
                   src={exp.logo}
-                  alt={`${exp.company} logo`}
-                  fill
-                  sizes="48px"
+                  alt=""
+                  width={exp.logoWidth}
+                  height={exp.logoHeight}
+                  sizes="90px"
                 />
               </div>
               <div className="bn-exp-body">
