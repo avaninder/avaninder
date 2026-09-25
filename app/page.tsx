@@ -27,7 +27,7 @@ const experiences: Experience[] = [
     logoWidth: 1318,
     logoHeight: 574,
     description:
-      "Incoming intern on the Starlink Guidance, Navigation, and Control team.",
+      "Incoming intern at Starlink.",
   },
   {
     company: "Mach Industries",
@@ -164,7 +164,7 @@ export default function Home() {
           <h1 className="bn-name">
             avaninder<span className="dot">.</span>bhaghayath
           </h1>
-          <p className="bn-subtitle">EE &amp; CS @ Yale</p>
+          <p className="bn-subtitle">EE @ Yale</p>
           <p className="bn-lede">
             I work on robotics, from embedded systems to computer vision. 
           </p>
@@ -275,7 +275,7 @@ export default function Home() {
             height={384}
           />
           <p>
-            Hey! I&apos;m Avaninder, and I&apos;m currently studying EE & CS at Yale. My background is in competitive robotics, and I&apos;m continuing to put those skills to use as an undergrad. If you want to reach out, my contact info is on LinkedIn (below).
+            Hey! I&apos;m Avaninder, and I&apos;m currently studying EE at Yale. My background is in competitive robotics, and I&apos;m continuing to put those skills to use as an undergrad. If you want to reach out, my contact info is on LinkedIn (below).
           </p>
         </section>
 
