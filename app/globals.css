@@ -165,7 +165,7 @@ body {
   gap: 1.1rem;
   padding: 1.15rem 0;
   border-top: 1px solid var(--hairline);
-  align-items: flex-start;
+  align-items: center;
 }
 .bn-exp:first-of-type {
   border-top: none;
@@ -174,8 +174,16 @@ body {
   flex: none;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   width: 5.5rem;
+}
+/* RIKEN's mark is much narrower than the other (roughly square) logos, so
+   left-aligning it like the rest visually reads as shifted left. Nudge it
+   right by half the gap between its rendered width and the square logos'
+   full-height footprint, so its visual center lines up with theirs instead
+   of the column's. */
+.bn-exp-logo.is-centered img {
+  margin-left: 0.75rem;
 }
 .bn-exp-logo img {
   display: block;
@@ -589,5 +597,8 @@ body {
   .bn-exp-logo img {
     max-width: 4rem;
     max-height: 2.9rem;
+  }
+  .bn-exp-logo.is-centered img {
+    margin-left: 0.54rem;
   }
 }

@@ -12,10 +12,23 @@ type Experience = {
   logo: string;
   logoWidth: number;
   logoHeight: number;
+  logoAlign?: "start" | "center";
   description: string;
 };
 
 const experiences: Experience[] = [
+  {
+    company: "SpaceX",
+    role: "Starlink GNC Intern",
+    location: "Redmond, WA",
+    start: "May 2027",
+    end: "August 2027",
+    logo: "/spacex_logo.png",
+    logoWidth: 1318,
+    logoHeight: 574,
+    description:
+      "Incoming intern on the Starlink Guidance, Navigation, and Control team.",
+  },
   {
     company: "Mach Industries",
     role: "Software Engineering Intern",
@@ -49,21 +62,22 @@ const experiences: Experience[] = [
     logo: "/riken_logo.png",
     logoWidth: 1513,
     logoHeight: 2421,
+    logoAlign: "center",
     description:
       "Ran a 9Be(p,γ)10B beamline experiment and used data analysis to determine reaction rates.",
   },
-  {
-    company: "VERTEX Robotics (FTC 15534)",
-    role: "Team Captain",
-    location: "Exeter, NH",
-    start: "September 2022",
-    end: "May 2026",
-    logo: "/ftcvertex_logo.png",
-    logoWidth: 525,
-    logoHeight: 502,
-    description:
-      "Led a 4-time World Championship-qualifying team (2023 Worlds finalist).",
-  },
+  // {
+  //   company: "VERTEX Robotics (FTC 15534)",
+  //   role: "Team Captain",
+  //   location: "Exeter, NH",
+  //   start: "September 2022",
+  //   end: "May 2026",
+  //   logo: "/ftcvertex_logo.png",
+  //   logoWidth: 525,
+  //   logoHeight: 502,
+  //   description:
+  //     "Led a 4-time World Championship-qualifying team (2023 Worlds finalist).",
+  // },
 ];
 
 type Project = {
@@ -76,6 +90,15 @@ type Project = {
 };
 
 const projects: Project[] = [
+  {
+    title: "VERTEX Robotics (FTC 15534)",
+    description:
+      "Captain; Led a 4-time World Championship-qualifying team (2023 Worlds finalist).",
+    projectUrl: "https://ftcvertex.com/",
+    icon: "/vertex_outline.png",
+    iconWidth: 2631,
+    iconHeight: 2450,
+  },
   {
     title: "Zephyrus VTOL",
     description:
@@ -123,15 +146,6 @@ const projects: Project[] = [
     icon: "/gimbal_outline.png",
     iconWidth: 2001,
     iconHeight: 2417,
-  },
-  {
-    title: "Vertices Path Generator",
-    description:
-      "A user interface to design and generate trajectories for the Vertices Path Follower, created by 15534 VERTEX.",
-    projectUrl: "https://vertices-path-gen.vercel.app",
-    icon: "/vertex_outline.png",
-    iconWidth: 2631,
-    iconHeight: 2450,
   },
 ];
 
@@ -202,7 +216,9 @@ export default function Home() {
           </div>
           {experiences.map((exp) => (
             <div className="bn-exp" key={exp.company}>
-              <div className="bn-exp-logo">
+              <div
+                className={`bn-exp-logo${exp.logoAlign === "center" ? " is-centered" : ""}`}
+              >
                 <Image
                   src={exp.logo}
                   alt=""
