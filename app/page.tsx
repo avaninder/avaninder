@@ -2,6 +2,7 @@ import type { ReactNode } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowUpRight, Github, Linkedin } from "lucide-react";
+import StarryToggle from "@/components/starry-toggle";
 
 type Experience = {
   company: string;
@@ -93,7 +94,7 @@ const projects: Project[] = [
   {
     title: "VERTEX Robotics (FTC 15534)",
     description:
-      "Captain; Qualified for worlds all four years (2023 Worlds finalist).",
+      "Captain; qualified for worlds all four years (2023 Worlds finalist).",
     projectUrl: "https://ftcvertex.com/",
     icon: "/vertex_outline.png",
     iconWidth: 2631,
@@ -300,6 +301,10 @@ export default function Home() {
             </a>
           </div>
         </footer>
+
+        <div className="bn-starry-toggle-row">
+          <StarryToggle />
+        </div>
       </div>
     </div>
   );

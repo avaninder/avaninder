@@ -40,11 +40,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
         className={`${plexSans.variable} ${plexMono.variable} antialiased min-h-screen overflow-x-hidden`}
         suppressHydrationWarning
       >
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `try{if(localStorage.getItem('starry-mode')==='1'){document.documentElement.classList.add('starry')}}catch(e){}`,
+          }}
+        />
         {children}
         <Analytics />
       </body>

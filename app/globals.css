@@ -10,6 +10,31 @@
   --blue: #2b4c8c;
 }
 
+html.starry {
+  --paper: #05070b;
+  --ink: #f4f3ee;
+  --graphite: #aeb2bd;
+  --hairline: rgba(244, 243, 238, 0.16);
+  --blue: #8fb4ff;
+}
+
+html.starry .bn-page {
+  background-image: url("/starlink_night_sky.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+html.starry .bn-phase-media {
+  background: rgba(244, 243, 238, 0.06);
+}
+
+html.starry .bn-project-icon img,
+html.starry .bn-exp-logo img {
+  filter: invert(1);
+}
+
 body {
   @apply font-sans;
 }
@@ -395,6 +420,34 @@ body {
 }
 .bn-footer a:hover {
   color: var(--ink);
+}
+
+.bn-starry-toggle-row {
+  display: flex;
+  justify-content: center;
+  padding: 0 0 2.4rem;
+}
+.bn-starry-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  color: var(--graphite);
+  background: transparent;
+  border: 1px solid var(--hairline);
+  border-radius: 999px;
+  padding: 0.35rem 0.75rem;
+  cursor: pointer;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+.bn-starry-toggle:hover {
+  color: var(--ink);
+  border-color: var(--graphite);
+}
+.bn-starry-toggle svg {
+  flex: none;
 }
 
 /* Photography full gallery page */
