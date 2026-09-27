@@ -93,7 +93,7 @@ const projects: Project[] = [
   {
     title: "VERTEX Robotics (FTC 15534)",
     description:
-      "Captain; Led a 4-time World Championship-qualifying team (2023 Worlds finalist).",
+      "Captain; Qualified for worlds all four years (2023 Worlds finalist).",
     projectUrl: "https://ftcvertex.com/",
     icon: "/vertex_outline.png",
     iconWidth: 2631,
