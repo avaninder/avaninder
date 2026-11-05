@@ -210,6 +210,13 @@ body {
 .bn-exp-logo.is-centered img {
   margin-left: 0.75rem;
 }
+/* Tightly-cropped mark: match the visible footprint of Mach's logo (its 4rem
+   square has ~4.7% transparent padding per side, so ~3.6rem of ink, inset
+   ~0.19rem from the left edge). */
+.bn-exp-logo.is-inset img {
+  max-width: 3.6rem;
+  margin-left: 0.19rem;
+}
 .bn-exp-logo img {
   display: block;
   width: auto;
@@ -653,5 +660,9 @@ body {
   }
   .bn-exp-logo.is-centered img {
     margin-left: 0.54rem;
+  }
+  .bn-exp-logo.is-inset img {
+    max-width: 2.61rem;
+    margin-left: 0.14rem;
   }
 }

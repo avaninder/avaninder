@@ -13,7 +13,7 @@ type Experience = {
   logo: string;
   logoWidth: number;
   logoHeight: number;
-  logoAlign?: "start" | "center";
+  logoAlign?: "start" | "center" | "inset";
   description: string;
 };
 
@@ -29,6 +29,18 @@ const experiences: Experience[] = [
     logoHeight: 574,
     description:
       "Incoming intern at Starlink.",
+  },
+  {
+    company: "Diode Computers",
+    role: "Member of Technical Staff",
+    location: "Brooklyn, NY",
+    start: "October 2026",
+    end: "Present",
+    logo: "/diode_inc_logo.png",
+    logoWidth: 238,
+    logoHeight: 196,
+    logoAlign: "inset",
+    description: "Working on robotics for PCB manufacturing.",
   },
   {
     company: "Mach Industries",
@@ -171,6 +183,39 @@ export default function Home() {
           </p>
         </header>
 
+        <section className="bn-section" aria-labelledby="experience-heading">
+          <div className="bn-section-head">
+            <h2 id="experience-heading">Experience</h2>
+          </div>
+          {experiences.map((exp) => (
+            <div className="bn-exp" key={exp.company}>
+              <div
+                className={`bn-exp-logo${exp.logoAlign === "center" ? " is-centered" : ""}${exp.logoAlign === "inset" ? " is-inset" : ""}`}
+              >
+                <Image
+                  src={exp.logo}
+                  alt=""
+                  width={exp.logoWidth}
+                  height={exp.logoHeight}
+                  sizes="90px"
+                />
+              </div>
+              <div className="bn-exp-body">
+                <div className="bn-exp-row">
+                  <h3>{exp.company}</h3>
+                  <span className="bn-exp-dates">
+                    {exp.start} &ndash; {exp.end}
+                  </span>
+                </div>
+                <p className="bn-exp-role">
+                  {exp.role} &middot; {exp.location}
+                </p>
+                <p className="desc">{exp.description}</p>
+              </div>
+            </div>
+          ))}
+        </section>
+
         <section className="bn-section" aria-labelledby="projects-heading">
           <div className="bn-section-head">
             <h2 id="projects-heading">Projects</h2>
@@ -209,39 +254,6 @@ export default function Home() {
               </div>
             );
           })}
-        </section>
-
-        <section className="bn-section" aria-labelledby="experience-heading">
-          <div className="bn-section-head">
-            <h2 id="experience-heading">Experience</h2>
-          </div>
-          {experiences.map((exp) => (
-            <div className="bn-exp" key={exp.company}>
-              <div
-                className={`bn-exp-logo${exp.logoAlign === "center" ? " is-centered" : ""}`}
-              >
-                <Image
-                  src={exp.logo}
-                  alt=""
-                  width={exp.logoWidth}
-                  height={exp.logoHeight}
-                  sizes="90px"
-                />
-              </div>
-              <div className="bn-exp-body">
-                <div className="bn-exp-row">
-                  <h3>{exp.company}</h3>
-                  <span className="bn-exp-dates">
-                    {exp.start} &ndash; {exp.end}
-                  </span>
-                </div>
-                <p className="bn-exp-role">
-                  {exp.role} &middot; {exp.location}
-                </p>
-                <p className="desc">{exp.description}</p>
-              </div>
-            </div>
-          ))}
         </section>
 
         <section className="bn-section" aria-labelledby="photography-heading">
