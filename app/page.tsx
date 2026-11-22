@@ -32,7 +32,7 @@ const experiences: Experience[] = [
   },
   {
     company: "Diode Computers",
-    role: "Member of Technical Staff",
+    role: "Engineering Intern",
     location: "Brooklyn, NY",
     start: "October 2026",
     end: "Present",
