@@ -28,7 +28,7 @@ const experiences: Experience[] = [
     logoWidth: 1318,
     logoHeight: 574,
     description:
-      "Incoming intern at Starlink.",
+      "Incoming Summer 2027.",
   },
   {
     company: "Diode Computers",
@@ -40,7 +40,7 @@ const experiences: Experience[] = [
     logoWidth: 238,
     logoHeight: 196,
     logoAlign: "inset",
-    description: "Working on robotics for PCB manufacturing.",
+    description: "Working on automating PCB manufacturing.",
   },
   {
     company: "Mach Industries",
