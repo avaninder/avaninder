@@ -166,7 +166,7 @@ const featuredPhotos = [
   { file: "IMG_0216.jpg", alt: "Bangkok skyline at dusk" },
   { file: "IMG_1441.jpg", alt: "Glass office tower against a clear sky" },
   { file: "IMG_1541.jpg", alt: "NTT Docomo Yoyogi tower over the treeline" },
-  { file: "IMG_1987.jpg", alt: "City lights at night from above" },
+  { file: "IMG_6194.jpg", alt: "Rainbow over the Brooklyn waterfront" },
 ];
 
 export default function Home() {
@@ -282,7 +282,7 @@ export default function Home() {
 
         <section className="bn-closing">
           <Image
-            src="/headshot.jpg"
+            src="/headshot_night.jpg"
             alt="Avaninder Bhaghayath"
             width={304}
             height={384}
